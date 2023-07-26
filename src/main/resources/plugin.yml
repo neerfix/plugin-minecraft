@@ -1,0 +1,9 @@
+name: Verify-account-myspacecube
+version: '1.0.0'
+api-version: '1.20'
+main: com.myspacecube.verifyAccountMyspacecube.Main
+commands:
+    verify:
+        description: Verify your account
+        permission: verify.use
+        aliases: [v]

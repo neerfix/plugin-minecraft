@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.myspacecube'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    mavenLocal()
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT'
+    implementation group: 'com.google.http-client', name: 'google-http-client-apache-v2', version: '1.43.3'
+}
+
+sourceCompatibility = targetCompatibility = '17'
+compileJava.options.encoding = 'UTF-8'
+setLibsDirName('../server-dev/plugins')
