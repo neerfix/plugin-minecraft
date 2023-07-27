@@ -35,7 +35,7 @@ public class CommandVerify implements CommandExecutor {
         return false;
     }
     public static void call_me(String token, String username, CommandSender sender) throws Exception {
-        String url = "http://localhost:9080/verify-minecraft/" + username + "/" + token;
+        String url = "https://www.myspacecube.com/verify-minecraft/" + username + "/" + token;
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
