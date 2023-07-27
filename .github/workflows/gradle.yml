@@ -7,11 +7,12 @@
 
 name: Java CI with Gradle
 
-# Run this workflow every time a new commit pushed to your repository
 on:
-  release:
-    types: # This configuration does not affect the page_build event above
-      - published
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
 permissions:
   contents: read
 
